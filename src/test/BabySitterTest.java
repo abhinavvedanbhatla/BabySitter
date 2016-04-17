@@ -13,4 +13,9 @@ public class BabySitterTest {
 		BabySitter babySitter = new BabySitter();
 		assertEquals(17,babySitter.getStartTime());
 	}
+	@Test
+	public void babySitterAcceptsNoEarlierThan17(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(16,babySitter.getStartTime());
+	}
 }
