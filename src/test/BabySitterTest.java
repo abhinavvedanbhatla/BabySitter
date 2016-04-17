@@ -9,8 +9,8 @@ import main.BabySitter;
 public class BabySitterTest {
 
 	@Test
-	public void whenIntegerIsGivenItReturnsInteger(){
+	public void BabySitterReturnsStartTimeas17(){
 		BabySitter babySitter = new BabySitter();
-		assertEquals(15,babySitter.getStartTime());
+		assertEquals(17,babySitter.getStartTime());
 	}
 }
