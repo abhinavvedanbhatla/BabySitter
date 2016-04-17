@@ -50,6 +50,13 @@ public class BabySitterTest {
 		assertEquals(140,babySitter.salary(17, 22, 4));
 	}
 	
+	@Test
+	public void salaryMethodCheckIfStartTimeIsEarlierThan17(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(140,babySitter.salary(16, 22, 4));
+	}
+
+	
 	
 	
 	
