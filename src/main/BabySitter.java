@@ -14,7 +14,8 @@ public class BabySitter {
 	int bedTime = timeProcessing(sc.nextLine());
 	int outTime = timeProcessing(sc.nextLine());
 
-	
+	int salary = salary(inTime,bedTime, outTime);
+	System.out.println("Total Salary: "+salary);
 	
 	}
 	public static int timeProcessing(String a){
@@ -40,5 +41,21 @@ public class BabySitter {
 		return x;
 	}
 	
-	
+	public static int salary(int inTime,int bedTime,int outTime){
+		int salary =0;
+		if( inTime >=17 && outTime <=4 && bedTime > inTime){
+			salary = salary + ((bedTime-inTime)* 12 );
+			salary = salary + ((24-bedTime)*8);
+			salary = salary + ((outTime)*16);
+			return salary;
+			}
+		else{
+			
+			System.out.println("invalid time entries");
+			
+		}
+		return salary;
+		
+	}
+
 }
