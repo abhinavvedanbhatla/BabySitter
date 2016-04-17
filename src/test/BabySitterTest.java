@@ -17,6 +17,15 @@ public class BabySitterTest {
 		
 	}
 	
+	@Test
+	public void if4AmIsGivenTheMethodReturns4(){
+	
+		String a = "4:00AM";
+		BabySitter babySitter = new BabySitter();
+		assertEquals(4,babySitter.timeProcessing(a));
+		
+	}
+	
 	
 	
 	
