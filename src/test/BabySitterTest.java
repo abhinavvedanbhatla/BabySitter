@@ -8,15 +8,16 @@ import main.BabySitter;
 
 public class BabySitterTest {
 	
-	@Test
-	public void ifStringIsGivenIntegerIsExpected(){
-		BabySitter babySitter = new BabySitter();
-		assertEquals(5,babySitter.timeProcessing("5:00PM"));
-	}
 	
 	@Test
 	public void ifStringIsInUpperCaseIntegerIsExpected(){
 		BabySitter babySitter = new BabySitter();
-		assertEquals(5,babySitter.timeProcessing("5:00PM"));
+		assertEquals(17,babySitter.timeProcessing("5:00PM"));
+	}
+	
+	@Test
+	public void ifStringIsPmTheMethodAdds12AndReturnsInteger(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(17,babySitter.timeProcessing("5:00PM"));
 	}
 }
