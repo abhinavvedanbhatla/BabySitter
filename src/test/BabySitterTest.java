@@ -44,4 +44,10 @@ public class BabySitterTest {
 		BabySitter babySitter = new BabySitter();
 		assertEquals(0,babySitter.salary(14, 11, 4));
 	}
+	
+	@Test
+	public void ifOutTimeisLaterThan4AMItReturnsInvalidEntry(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(0,babySitter.salary(17, 11, 5));
+	}
 }
