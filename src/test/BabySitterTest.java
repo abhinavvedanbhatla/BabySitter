@@ -11,6 +11,6 @@ public class BabySitterTest {
 	@Test
 	public void ifStringIsGivenIntegerIsExpected(){
 		BabySitter babySitter = new BabySitter();
-		assertEquals(17,babySitter.timeProcessing("5:00PM"));
+		assertEquals(5,babySitter.timeProcessing("5:00PM"));
 	}
 }

@@ -9,7 +9,10 @@ public class BabySitter {
 
 	public int timeProcessing(String time) {
 		// TODO Auto-generated method stub
-		return 0;
+		String temp[] = time.split(":");
+		String ante_postMeridiem = time.substring(time.length()-2);
+		int timeValue = Integer.parseInt(temp[0]);
+		return timeValue;
 	}
 
 }
