@@ -20,4 +20,10 @@ public class BabySitterTest {
 		BabySitter babySitter = new BabySitter();
 		assertEquals(17,babySitter.timeProcessing("5:00PM"));
 	}
+	
+	@Test
+	public void ifStringIsAmTheMethodDoesNotAddAndReturnsInteger(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(4,babySitter.timeProcessing("4:00AM"));
+	}
 }

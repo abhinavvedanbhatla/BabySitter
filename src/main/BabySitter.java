@@ -17,7 +17,10 @@ public class BabySitter {
 		if(ante_postMeridiem.equals("pm")){
 			timeValue = timeValue + 12;
 		}
-		
+		else if(ante_postMeridiem.equals("am") && timeValue <= 4)
+		{
+			return timeValue;
+		}
 		else{
 		
 			return 13;
