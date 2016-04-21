@@ -1,13 +1,8 @@
 package main;
 
 public class BabySitter {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public int timeProcessing(String time) {
+	
+	public static int timeProcessing(String time) {
 		// TODO Auto-generated method stub
 		time =time.toLowerCase();
 		String temp[] = time.split(":");
@@ -27,7 +22,7 @@ public class BabySitter {
 		return timeValue;
 	}
 
-	public int salary(int inTime, int bedTime, int outTime) {
+	public static int salary(int inTime, int bedTime, int outTime) {
 		// TODO Auto-generated method stub
 		int salary = 0;
 		if( inTime >= 17 && outTime <= 4 && bedTime > inTime){
