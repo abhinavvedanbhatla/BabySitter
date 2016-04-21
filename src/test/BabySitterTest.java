@@ -13,4 +13,10 @@ public class BabySitterTest {
 		BabySitter babySitter = new BabySitter();
 		assertEquals(5,babySitter.timeProcessing("5:00PM"));
 	}
+	
+	@Test
+	public void ifStringIsInUpperCaseIntegerIsExpected(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(5,babySitter.timeProcessing("5:00PM"));
+	}
 }
