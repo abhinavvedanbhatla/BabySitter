@@ -32,4 +32,10 @@ public class BabySitterTest {
 		BabySitter babySitter = new BabySitter();
 		assertEquals(13,babySitter.timeProcessing("5:00GM"));
 	}
+	
+	@Test
+	public void ifThreeParametersAreGivenAsInputItReturnsInteger(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(0,babySitter.salary(17,10,4));
+	}
 }

@@ -27,4 +27,10 @@ public class BabySitter {
 		return timeValue;
 	}
 
+	public int salary(int inTime, int bedTime, int outTime) {
+		// TODO Auto-generated method stub
+		int salary = 0;
+		return salary;
+	}
+
 }
