@@ -50,4 +50,10 @@ public class BabySitterTest {
 		BabySitter babySitter = new BabySitter();
 		assertEquals(0,babySitter.salary(17, 11, 5));
 	}
+	
+	@Test
+	public void ifBedTimeisLessThanInTimeItReturnsInvalidEntry(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(0,babySitter.salary(17, 3, 4));
+	}
 }

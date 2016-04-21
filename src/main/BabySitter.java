@@ -30,7 +30,7 @@ public class BabySitter {
 	public int salary(int inTime, int bedTime, int outTime) {
 		// TODO Auto-generated method stub
 		int salary = 0;
-		if( inTime >= 17 && outTime <= 4){
+		if( inTime >= 17 && outTime <= 4 && bedTime > inTime){
 			
 		}
 		else
