@@ -62,4 +62,10 @@ public class BabySitterTest {
 		BabySitter babySitter = new BabySitter();
 		assertEquals(140,babySitter.salary(17, 22, 4));
 	}
+	
+	@Test
+	public void fractionalHoursRoundedToFloorValue(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(3,babySitter.timeProcessing("3:45aM"));
+	}
 }
