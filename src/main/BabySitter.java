@@ -31,7 +31,10 @@ public class BabySitter {
 		// TODO Auto-generated method stub
 		int salary = 0;
 		if( inTime >= 17 && outTime <= 4 && bedTime > inTime){
-			
+			salary = salary + ((bedTime-inTime)* 12 );
+			salary = salary + ((24-bedTime)*8);
+			salary = salary + ((outTime)*16);
+			return salary;
 		}
 		else
 			System.out.println("Invalid Entries");

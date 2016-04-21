@@ -56,4 +56,10 @@ public class BabySitterTest {
 		BabySitter babySitter = new BabySitter();
 		assertEquals(0,babySitter.salary(17, 3, 4));
 	}
+	
+	@Test
+	public void salaryMethodCheck(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(140,babySitter.salary(17, 22, 4));
+	}
 }
