@@ -26,4 +26,10 @@ public class BabySitterTest {
 		BabySitter babySitter = new BabySitter();
 		assertEquals(4,babySitter.timeProcessing("4:00AM"));
 	}
+	
+	@Test
+	public void ifStringIsNotInSpecifiedFormatItReturns13(){
+		BabySitter babySitter = new BabySitter();
+		assertEquals(13,babySitter.timeProcessing("5:00GM"));
+	}
 }

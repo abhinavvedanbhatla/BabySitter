@@ -14,7 +14,7 @@ public class BabySitter {
 		String ante_postMeridiem = time.substring(time.length()-2);
 		int timeValue = Integer.parseInt(temp[0]);
 		
-		if(ante_postMeridiem.equals("pm")){
+		if(ante_postMeridiem.equals("pm") && timeValue >= 5){
 			timeValue = timeValue + 12;
 		}
 		else if(ante_postMeridiem.equals("am") && timeValue <= 4)
@@ -22,7 +22,6 @@ public class BabySitter {
 			return timeValue;
 		}
 		else{
-		
 			return 13;
 		}
 		return timeValue;
