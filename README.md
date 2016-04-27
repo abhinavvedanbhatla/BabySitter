@@ -14,15 +14,17 @@ Add the JDK bin folder to the beginning of the Path value.
 							c:\Program Files\Java\jdk1.7.0\bin;
 Click OK to exit.
 
----- COMPILE AND RUN ON THE COMMAND LINE ----
+---- COMPILE AND RUN ----
 
-You can easily compile and run the program using command line. Make sure the path where the source code is located is correct.
+Import the jar file (BabySitter.jar) in the desired program to run the test cases.
 
-                  javac BabySitterMain.java
-                  
-You can then run individual programs using the java command.  
+Sample Test Cases as follows:
+Enter startTime, bedTime and outTime in NUMBER:00PM/AM format
+5:00Pm
+11:00PM
+4:00AM
+Total Salary: 144
 
-                  java BabySitterMain
- 
+		 			
 
 
